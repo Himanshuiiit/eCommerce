@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-md-6">
             <p className="mb-3 mb-md-0">Made by Group 23
             </p>
-            <a className="text-dark fs-4" href="https://github.com/ssahibsingh" target="_blank" rel="noreferrer">
+            <a className="text-dark fs-4" href="https://github.com/Himanshuiiit/eCommerce" target="_blank" rel="noreferrer">
               <i className="fa fa-github"></i>
             </a>
           </div>
