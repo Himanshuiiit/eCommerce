@@ -156,7 +156,7 @@ const Checkout = () => {
                         <input
                           type="text"
                           className="form-control"
-                          id="address2"
+                          id="country"
                           placeholder="Country Name"
                         />
                       </div>
@@ -169,7 +169,7 @@ const Checkout = () => {
                         <input
                           type="text"
                           className="form-control"
-                          id="address2"
+                          id="country"
                           placeholder="State Name"
                         />
                       </div>
@@ -266,7 +266,14 @@ const Checkout = () => {
 
                     <hr className="my-4" />
                   </form>
-                  <button className="w-100 btn btn-primary " id="finalCheckout" onClick={()=>window.location.href="/"}>
+                  <button
+                    className="w-100 btn btn-primary "
+                    id="finalCheckout"
+                    onClick={() => {
+                      alert("Order Placed Successfully");
+                      window.location.href = "/";
+                    }}
+                  >
                     Continue to checkout
                   </button>
                 </div>
@@ -283,7 +290,7 @@ const Checkout = () => {
       <div className="container my-3 py-3">
         <h1 className="text-center">Checkout</h1>
         <hr />
-        {state.length ? <ShowCheckout /> : <EmptyCart />}
+        {<ShowCheckout />}
       </div>
       <Footer />
     </>

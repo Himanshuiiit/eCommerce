@@ -43,7 +43,10 @@ const Register = () => {
                             </div>
                         </form>
                             <div className="text-center">
-                                <button class="my-2 mx-auto btn btn-dark" type="submit" id="registerBtn" onClick={()=>window.location.href="/"}>
+                                <button class="my-2 mx-auto btn btn-dark" type="submit" id="registerBtn" onClick={()=>{
+                                  alert("Register Successfully");
+                                  window.location.href = "/";
+                                }}>
                                     Register
                                 </button>
                             </div>

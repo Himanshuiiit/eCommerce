@@ -31,14 +31,30 @@ const Login = () => {
                 />
               </div>
               <div className="my-3">
-                <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
+                <p>
+                  New Here?{" "}
+                  <Link
+                    to="/register"
+                    className="text-decoration-underline text-info"
+                  >
+                    Register
+                  </Link>{" "}
+                </p>
               </div>
             </form>
-              <div className="text-center">
-                <button class="my-2 mx-auto btn btn-dark" id="loginBtn" type="submit" onClick={()=>window.location.href="/"}>
-                  Login
-                </button>
-              </div>
+            <div className="text-center">
+              <button
+                class="my-2 mx-auto btn btn-dark"
+                id="loginBtn"
+                type="submit"
+                onClick={() => {
+                  alert("Login Successfully");
+                  window.location.href = "/";
+                }}
+              >
+                Login
+              </button>
+            </div>
           </div>
         </div>
       </div>
