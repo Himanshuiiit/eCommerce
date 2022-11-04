@@ -48,7 +48,6 @@ const Login = () => {
                 id="loginBtn"
                 type="submit"
                 onClick={() => {
-                  alert("Login Successfully");
                   window.location.href = "/";
                 }}
               >
