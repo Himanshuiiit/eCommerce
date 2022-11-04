@@ -169,7 +169,7 @@ const Checkout = () => {
                         <input
                           type="text"
                           className="form-control"
-                          id="country"
+                          id="state"
                           placeholder="State Name"
                         />
                       </div>
