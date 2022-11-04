@@ -84,7 +84,11 @@ const Products = () => {
 
         {filter.map((product) => {
           return (
-            <div id={product.id} key={product.id} className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
+            <div
+              id={product.id}
+              key={product.id}
+              className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4"
+            >
               <div className="card text-center h-100" key={product.id}>
                 <img
                   className="card-img-top p-3"
@@ -106,16 +110,22 @@ const Products = () => {
                     <li className="list-group-item">Vestibulum at eros</li> */}
                 </ul>
                 <div className="card-body">
-                  <Link to={"/product/" + product.id} className="btn btn-dark m-1">
+                  <Link
+                    to={"/product/" + product.id}
+                    className="btn btn-dark m-1"
+                  >
                     Buy Now
                   </Link>
-                  <button className="btn btn-dark m-1" onClick={() => addProduct(product)}>
+                  <button
+                    className="btn btn-dark m-1"
+                    onClick={() => addProduct(product)}
+                    id={product.id}
+                  >
                     Add to Cart
                   </button>
                 </div>
               </div>
             </div>
-
           );
         })}
       </>

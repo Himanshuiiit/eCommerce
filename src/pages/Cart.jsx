@@ -148,6 +148,7 @@ const Cart = () => {
                     <Link
                       to="/checkout"
                       className="btn btn-dark btn-lg btn-block"
+                      id="checkoutBtn"
                     >
                       Go to checkout
                     </Link>

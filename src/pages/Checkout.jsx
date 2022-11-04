@@ -266,7 +266,7 @@ const Checkout = () => {
 
                     <hr className="my-4" />
                   </form>
-                  <button className="w-100 btn btn-primary " onClick={()=>window.location.href="/"}>
+                  <button className="w-100 btn btn-primary " id="finalCheckout" onClick={()=>window.location.href="/"}>
                     Continue to checkout
                   </button>
                 </div>
