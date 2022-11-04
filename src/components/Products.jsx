@@ -119,7 +119,7 @@ const Products = () => {
                   <button
                     className="btn btn-dark m-1"
                     onClick={() => addProduct(product)}
-                    id={product.id}
+                    id={product.id + ""}
                   >
                     Add to Cart
                   </button>
