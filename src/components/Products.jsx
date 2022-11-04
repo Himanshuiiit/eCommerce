@@ -142,7 +142,7 @@ const Products = () => {
                   <button
                     className="btn btn-dark m-1"
                     onClick={() => addProduct(product)}
-                    id={product.id.toString()}
+                    id={"prod" + product.id}
                   >
                     Add to Cart
                   </button>
